@@ -1,0 +1,141 @@
+:root {
+  --primary: #ff0000;
+  --primary-light: rgba(255, 0, 0, 0.8);
+  --primary-fade: rgba(255, 0, 0, 0.5);
+  --hover-bg: #ff5050;
+  --menu-bg: linear-gradient(90deg, rgba(255, 0, 0, 0.9), rgba(255, 0, 0, 0.7));
+}
+
+.NavbarItems {
+  background: var(--menu-bg);
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px 70px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.navbar-logo {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu-icon {
+  display: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Desktop Menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  margin-right: 20px;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: background 0.2s ease, color 0.2s ease;
+  border-radius: 4px;
+}
+
+.nav-links:hover {
+  background-color: var(--hover-bg);
+  color: white;
+}
+
+/* Sign Up (Mobile) */
+.nav-links-mobile {
+  display: none;
+}
+
+/* Tablet & Phone Responsive Styling */
+@media screen and (max-width: 768px) {
+  .NavbarItems button{
+    display: none;
+  }
+
+  .navbar-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: block;
+    z-index: 1100;
+  }
+
+  .nav-menu {
+    flex-direction: row; /* Make menu horizontal */
+    flex-wrap: wrap;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(255, 0, 0, 0.9), rgba(255, 100, 100, 0.8));
+    padding: 10px 0;
+    justify-content: center;
+    gap: 15px;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-links {
+    padding: 10px 14px;
+    font-size: 0.95rem;
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+  }
+
+  .nav-links:hover {
+    background-color: #ff5050;
+    color: white;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    padding: 10px 14px;
+    background-color: white;
+    color: var(--primary);
+    font-weight: 600;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  .nav-links-mobile:hover {
+    background-color: var(--hover-bg);
+    color: white;
+  }
+}
+
