@@ -2,26 +2,26 @@
 
 A responsive, modern navigation bar built with React, featuring a glassy dark theme, animated mobile menu, FontAwesome icons, and a reusable Sign Up button.
 
-## 🖥️ Demo 
+## Demo 
 
 🔗 **Live Demo:** https://navigation-bar-five-pi.vercel.app/
 
-## 🧩 Features
+## Features
 
-- 📱 Responsive design (desktop & mobile)
-- 🍔 Hamburger menu icon for mobile toggle
-- 💡 FontAwesome icons integration (bars, times, React logo)
-- 💻 Custom navigation menu items
-- 🎨 Reusable `Button` component
+- Responsive design (desktop & mobile)
+- Hamburger menu icon for mobile toggle
+- FontAwesome icons integration (bars, times, React logo)
+- Custom navigation menu items
+- Reusable `Button` component
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - React (class components)
 - FontAwesome (solid and brand icons)
 - CSS (custom styling with `NavBar.css` and `Button.css`, no UI library)
 - Component-based architecture suitable for reuse across pages
 
-## 🧱 Project Structure
+## Project Structure
 - `src/`
     - `components/`
       - `NavBar/`
