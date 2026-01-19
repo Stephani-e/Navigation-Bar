@@ -1,6 +1,10 @@
 # React NavBar Component
 
-A responsive and animated navigation bar built with React. This component includes a mobile toggle menu, FontAwesome icons, and a styled Sign-Up button.
+A responsive, modern navigation bar built with React, featuring a glassy dark theme, animated mobile menu, FontAwesome icons, and a reusable Sign Up button.
+
+## 🖥️ Demo 
+
+🔗 **Live Demo:** https://navigation-bar-five-pi.vercel.app/
 
 ## 🧩 Features
 
@@ -14,55 +18,29 @@ A responsive and animated navigation bar built with React. This component includ
 
 - React (class components)
 - FontAwesome (solid and brand icons)
-- CSS (custom styling with `NavBar.css`)
-- Component-based architecture
+- CSS (custom styling with `NavBar.css` and `Button.css`, no UI library)
+- Component-based architecture suitable for reuse across pages
 
 ## 🧱 Project Structure
+- `src/`
+    - `components/`
+      - `NavBar/`
+         - `NavBar.jsx`
+         - `NavBar.css`
+         - `MenuItems.js`
+      - `Buttons/`
+         - `Button.jsx`
+         - `Button.css`
 
-src/
-│
-├── components/
-│ ├── NavBar/
-│ │ ├── NavBar.jsx
-│ │ ├── NavBar.css
-│ │ └── MenuItems.js
-│ └── Button.jsx
-│
-└── App.jsx
+## Getting Started
 
-## 🧪 Sample Menu Item Structure (`MenuItems.js`)
-
-```js
-export const MenuItems = [
-  {
-    title: "Home",
-    url: "#",
-    cName: "nav-links"
-  },
-  {
-    title: "About",
-    url: "#",
-    cName: "nav-links"
-  },
-  {
-    title: "Services",
-    url: "#",
-    cName: "nav-links"
-  },
-  {
-    title: "Contact",
-    url: "#",
-    cName: "nav-links"
-  },
-  {
-    title: "Products",
-    url: "#",
-    cName: "nav-links"
-  },
-  {
-    title: "Sign Up",
-    url: "#",
-    cName: "nav-links-mobile"
-  }
-];
-
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Stephani-e/Navigation-Bar.git
+   cd Quiz-App
+2. Install Dependencies:
+   ```bash
+   npm install
+3. Start the development server
+   ```bash
+   npm start
