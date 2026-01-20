@@ -37,7 +37,7 @@ A responsive, modern navigation bar built with React, featuring a glassy dark th
 1. Clone the repository:
    ```bash
    git clone https://github.com/Stephani-e/Navigation-Bar.git
-   cd Quiz-App
+   cd Navigation-Bar
 2. Install Dependencies:
    ```bash
    npm install
