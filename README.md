@@ -43,4 +43,4 @@ A responsive, modern navigation bar built with React, featuring a glassy dark th
    npm install
 3. Start the development server
    ```bash
-   npm start
+   npm run dev
